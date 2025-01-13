@@ -27,7 +27,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-mongoose.connect('mongodb://localhost:27017/');
+mongoose.connect('....'); // your mongoDB connection string
 
 const postSchema = new mongoose.Schema({
     title: String,
